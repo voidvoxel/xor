@@ -1,0 +1,28 @@
+{
+    "name": "@zerda.js/xor",
+    "version": "0.0.0",
+    "main": "src/index.js",
+    "scripts": {
+        "build": "node scripts/train.js"
+    },
+    "dependencies": {
+        "brain.js": "^2.0.0-beta.23"
+    },
+    "devDependencies": {
+    },
+    "zerda": {
+        "model": "@zerda.js/feed-forward",
+        "layers": {
+            "input": 2,
+            "hidden": [ 3 ],
+            "output": 1
+        },
+        "train": {
+            "samples": "samples/xor.json",
+            "options": {
+                "errorThresh": 0.011,
+                "iterations": 1000
+            }
+        }
+    }
+}
