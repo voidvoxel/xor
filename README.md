@@ -1,2 +1,3 @@
-# braintime-xor
- A feed forward neural network that predicts XOR
+# `xor`
+
+A feed forward neural network that predicts XOR
